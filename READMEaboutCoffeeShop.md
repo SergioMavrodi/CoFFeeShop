@@ -47,3 +47,60 @@ The coffee shop serves both local residents and tourists, focusing on quality se
 ## 🔗 Key Relationships
 
 ### Primary Business Flow:
+ Customer → Places → Order → Contains → OrderItems → References → Products
+↓ ↓ ↓
+Loyalty Staff Payment
+Program Servicing Processing
+ 
+### Data Connections:
+- One customer can place multiple orders
+- One order can contain multiple products
+- Each order is served by one staff member
+- Each order has one corresponding payment
+
+## 💾 Technical Specifications
+
+### Database Normalization
+- **1NF**: All data atomic, no repeating groups
+- **2NF**: No partial dependencies
+- **3NF**: No transitive dependencies
+
+### Key Features
+- Multi-language support (Russian/Kyrgyz/English)
+- Local currency (KGS) handling
+- Phone number formatting for Kyrgyzstan
+- Loyalty program integration
+
+## 👥 Target Users
+
+### Internal Users:
+- Baristas and cashiers
+- Shift managers
+- Business owners
+- Marketing team
+
+### External Beneficiaries:
+- Regular customers (via loyalty program)
+- Suppliers (via inventory insights)
+
+## 📈 Expected Outcomes
+
+### Short-term:
+- 20% improvement in order tracking
+- 15% better staff performance monitoring
+- Reduced manual reporting time
+
+### Long-term:
+- Data-driven menu optimization
+- Enhanced customer retention
+- Increased operational efficiency
+
+## 🌍 Local Context
+The system is specifically designed for the Kyrgyz market with:
+- Local name and surname handling
+- Kyrgyz phone number formats (+996)
+- Cultural preferences in product categories
+- Local payment methods (cash, card, QR)
+
+---
+
